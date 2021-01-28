@@ -1,0 +1,39 @@
+C:\Users\Kristensen\Dokumenter\projekter\NodeJS\NodeJS2.0-2.5>node main
+Server running, and listening at http://127.0.0.1:3000/
+Log: Received an incoming request!
+Log: Method: GET
+Log: URL: "/?name=Nadia+Skau&email=nadiaskau%40hotmail.com&favanimal=Hund"
+Log: Headers:
+{
+    "host": "localhost:3000",
+    "connection": "keep-alive",
+    "sec-ch-ua": "\"Google Chrome\";v=\"87\", \" Not;A Brand\";v=\"99\", \"Chromium\";v=\"87\"",
+    "sec-ch-ua-mobile": "?0",
+    "upgrade-insecure-requests": "1",
+    "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Safari/537.36",
+    "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9",
+    "sec-fetch-site": "cross-site",
+    "sec-fetch-mode": "navigate",
+    "sec-fetch-user": "?1",
+    "sec-fetch-dest": "document",
+    "accept-encoding": "gzip, deflate, br",
+    "accept-language": "da-DK,da;q=0.9,en-US;q=0.8,en;q=0.7"
+}
+Log: Received an incoming request!
+Log: Method: GET
+Log: URL: "/favicon.ico"
+Log: Headers:
+{
+    "host": "localhost:3000",
+    "connection": "keep-alive",
+    "sec-ch-ua": "\"Google Chrome\";v=\"87\", \" Not;A Brand\";v=\"99\", \"Chromium\";v=\"87\"",
+    "sec-ch-ua-mobile": "?0",
+    "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Safari/537.36",
+    "accept": "image/avif,image/webp,image/apng,image/*,*/*;q=0.8",
+    "sec-fetch-site": "same-origin",
+    "sec-fetch-mode": "no-cors",
+    "sec-fetch-dest": "image",
+    "referer": "http://localhost:3000/?name=Nadia+Skau&email=nadiaskau%40hotmail.com&favanimal=Hund",
+    "accept-encoding": "gzip, deflate, br",
+    "accept-language": "da-DK,da;q=0.9,en-US;q=0.8,en;q=0.7"
+}
