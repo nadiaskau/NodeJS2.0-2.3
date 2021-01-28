@@ -16,6 +16,9 @@
         </form>
 
         <p>We have to run this page with file-protocol, since the webserver is not yet set up for showing a HTML-page</p>
-        <p>When submitting, the log shows twice. Look at '2-1.txt' for details. Not sure why it turns up twice.</p>
+        <p>Look at '2-1.txt' for log details. We don't have a query string with the submitted data, but I'm quite sure we can extract it - <br>
+            I'm just not sure how to do so :-) <br>
+            I would believe it's in the body of the request, so something like this 'req.body.name'
+        </p>
     </body>
 </html>

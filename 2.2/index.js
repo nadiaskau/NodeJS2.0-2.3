@@ -2,6 +2,7 @@
 
 const http = require("http");
 const httpStatus = require("http-status-codes");
+const data = require("./libWebUtil");
 const hostname = "127.0.0.1";
 const port = 3000;
 const app = http.createServer();            // server as an obj
@@ -13,9 +14,8 @@ const getJSONString = function (obj) {      // prettyprint obj
 app.on("request", function (req, res) {     // eventhandler for "request"
     console.log("Log: Received an incoming request!");
     console.log("Log: Method: " + req.method);
-    console.log("Log: URL: " + getJSONString(req.url));
-    console.log("Log: Headers:\n" + getJSONString(req.headers)); 
-                                            // prep response header
+    data.createObject(req);
+    
     res.writeHead(httpStatus.OK, {
         "Content-Type": "text/html; charset=utf-8"
     });

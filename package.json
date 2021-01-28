@@ -1,5 +1,5 @@
 {
-  "name": "nodejs2.0-2.5",
+  "name": "nodejs2.0-2.3",
   "version": "1.0.0",
   "description": "Server responding to requests",
   "main": "main.js",
@@ -8,15 +8,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nadiaskau/NodeJS2.0-2.5.git"
+    "url": "git+https://github.com/nadiaskau/NodeJS2.0-2.3.git"
   },
   "author": "Nadia Skau",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/nadiaskau/NodeJS2.0-2.5/issues"
+    "url": "https://github.com/nadiaskau/NodeJS2.0-2.3/issues"
   },
-  "homepage": "https://github.com/nadiaskau/NodeJS2.0-2.5#readme",
+  "homepage": "https://github.com/nadiaskau/NodeJS2.0-2.3#readme",
   "dependencies": {
-    "http-status-codes": "^2.1.4"
+    "http-status-codes": "^2.1.4",
+    "query": "^0.2.0",
+    "query-string": "^6.13.8"
   }
 }
