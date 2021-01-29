@@ -28,7 +28,6 @@ const createObject = function (req){
         req.on('end', function() {
             let get = req.url.split("?"); //split query string after ? 
             let GET = querystring.parse(get[1]); 
-            console.log(get);
             for (var propName in GET) { //for each property name in post object 
                 console.log(`"${propName}": "${GET[propName]}",`); //print out data
             }
