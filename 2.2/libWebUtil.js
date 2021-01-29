@@ -5,19 +5,17 @@
 
 const querystring = require("querystring"); // parsing and formatting URL query strings
 const query = require("query"); //not in use at the moment
-const { rawListeners } = require("process");
 
 const createObject = function (req){
     
-    let body = '';
-    req.on('data', function (data) { //'on' binds an event to an object - AKA when data is being sent
-        body += data;
-    });
-
    if(req.method == 'POST'){
 
-
-       req.on('end', function() { //when the request is over
+        let body = '';
+        req.on('data', function (data) { //'on' binds an event to an object - AKA when data is being sent
+            body += data;
+        });
+        
+        req.on('end', function() { //when the request is over
         let post = querystring.parse(body); //parsing our data 
 
         for (var propName in post) { //for each property name in post object 

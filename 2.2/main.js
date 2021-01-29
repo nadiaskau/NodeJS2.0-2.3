@@ -7,10 +7,6 @@ const hostname = "127.0.0.1";
 const port = 3000;
 const app = http.createServer();            // server as an obj
 
-const getJSONString = function (obj) {      // prettyprint obj
-    return JSON.stringify(obj, null, 4);
-}
-
 app.on("request", function (req, res) {     // eventhandler for "request"
     console.log("Log: Received an incoming request!");
     console.log("Log: Method: " + req.method);
